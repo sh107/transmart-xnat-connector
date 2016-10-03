@@ -3,22 +3,24 @@ This connector consists of components for data capture, organisation and analysi
 
 # Features
 
-# Usage
+# Installation
 
-1.	Unzip “xnat-plugin-1.1.zip” to a directory
+1. Unzip “xnat-plugin-1.1.zip” to a directory
 
-2.	Add the following in “grails-app/conf/BuildConfig.groovy”
-    
+2. Add the following in “grails-app/conf/BuildConfig.groovy”
+
+````
     grails.plugin.location.'transmart-xnat' = "[Your xnat directory]"
-    
-3.	Change the following in “grails-app/conf/Config.groovy” if you would like to connect to your own XNAT server, example:
+````
 
+3.	Change the following in “grails-app/conf/Config.groovy” if you would like to connect to your own XNAT server, example:
+````
     org.xnat.domain = 'central.xnat.org'
     org.xnat.username = 'your xnat username'
     org.xnat.password = 'your xnat password'
-    
+```` 
 4.	Import the database schema to the same PostgreSQL database as tranSMART
-
+````
     CREATE SCHEMA xnat
       AUTHORIZATION biomart_user;
 
@@ -35,7 +37,7 @@ This connector consists of components for data capture, organisation and analysi
     );
     ALTER TABLE xnat.subject
       OWNER TO biomart_user;
-
+````
     After the scheme is generated, please fill in the xnat.subject table as shown below
 
 tsmart_subjectid
