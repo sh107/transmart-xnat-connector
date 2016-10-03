@@ -7,7 +7,9 @@ This connector consists of components for data capture, organisation and analysi
 
 For installation of tranSMART, please visit [here](https://wiki.transmartfoundation.org/display/TSMTGPL/tranSMART+1.2+INSTALLATION+NOTES+ON+UBUNTU) for more detail. 
 
-Unzip “xnat-plugin-1.1.zip” to a directory
+The following shows the installation procedure for tranSMART-XNAT Connector
+
+Please download the code using Git to a local directory
 
 Add the following in “grails-app/conf/BuildConfig.groovy”
 
