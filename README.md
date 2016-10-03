@@ -4,7 +4,10 @@ This connector consists of components for data capture, organisation and analysi
 # Features
 tranSMART-XNAT Connector consists of components for data capture, organisation and analysis. Data capture is responsible for imaging capture either from PACS system or directly from an MRI scanner, or from raw data files. Data are organised in a similar fashion as tranSMART and are stored in a format that allows direct analysis within tranSMART. 
 
-![](images/table 1-1.png?raw=true)
+![](images/1.png?raw=true)
+![](images/2.png?raw=true)
+![](images/3.png?raw=true)
+![](images/4.png?raw=true)
 
 # Prerequisite 
 
