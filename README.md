@@ -35,31 +35,24 @@ This connector consists of components for data capture, organisation and analysi
     WITH (
       OIDS=FALSE
     );
-    ALTER TABLE xnat.subject
-      OWNER TO biomart_user;
+    ALTER TABLE xnat.subject OWNER TO biomart_user;
 ````
-    After the scheme is generated, please fill in the xnat.subject table as shown below
+5.  After the scheme is generated, please fill in the xnat.subject table as shown below
 
-tsmart_subjectid
-  xnat_subjectid
-  xnat_project
-  id
-OPT_001
-OPT_001
-eTRIKS
-1
-OPT_002
-OPT_002
-eTRIKS
-2
+| tsmart_subjectid | xnat_subjectid | xnat_project | id |
+| --- | --- | --- | --- |
+| OPT_001 | OPT_001 | eTRIKS | 1 |
+| OPT_002 | OPT_002 | eTRIKS | 2 |
 
-•	tsmart_subjectid denotes the id of the subject in tranSMART. 
-•	xnat_subjectid denotes the id of the corresponding subject in XNAT. Each row of IDs refer to the same subject, in this example above, the subject IDs are the same for tranSMART and XNAT. If they differ, enter the id names appropriately. 
-•	xnat_project is the id of the project in XNAT which contains the subjects
-•	id is self-defined unique number to identify the subject within the table
+* tsmart_subjectid denotes the id of the subject in tranSMART. 
 
-5.	Start the tranSMART, the plugin will be loaded automatically
+* xnat_subjectid denotes the id of the corresponding subject in XNAT. Each row of IDs refer to the same subject, in this example above, the subject IDs are the same for tranSMART and XNAT. If they differ, enter the id names appropriately. 
 
+* xnat_project is the id of the project in XNAT which contains the subjects
+
+* id is self-defined unique number to identify the subject within the table
+
+6.	Start the tranSMART, the plugin will be loaded automatically
 
 # Contributing
 
