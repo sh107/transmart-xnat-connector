@@ -6,7 +6,7 @@ tranSMART-XNAT Connector consists of components for data capture, organisation a
 
 # Prerequisite 
 
-It is essential to set up tranSMART before deploy the tranSMART-XNAT plugin.
+It is essential to set up tranSMART before deploy the tranSMART-XNAT Connector.
 
 For installation of tranSMART, please visit [here](https://wiki.transmartfoundation.org/display/TSMTGPL/tranSMART+1.2+INSTALLATION+NOTES+ON+UBUNTU) for more detail. 
 
