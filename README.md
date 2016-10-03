@@ -17,7 +17,7 @@ However, we will leverage tranSMART as a data exploration tool to integrate data
 
 ![](images/3.png?raw=true)
 
-These are the components that we make provision for when designing the XNAT-tranSMART extension. There are three actions, to caption the image, to organize it, and to analyse it. Images can be captured from PAC systems or in the case of XNAT, it can be received directly from the scanner. XNAT has the provisions for organizing, viewing and downloading images. An image analysis software like 3D Slicer provides tools for measuring and recording areas of interest. Data is also captured from spreadsheets, and curated and organized in a platform like tranSMART.
+These are the components that we make provision for when designing the tranSMART-XNAT Connector. There are three actions, to caption the image, to organize it, and to analyse it. Images can be captured from PAC systems or in the case of XNAT, it can be received directly from the scanner. XNAT has the provisions for organizing, viewing and downloading images. An image analysis software like 3D Slicer provides tools for measuring and recording areas of interest. Data is also captured from spreadsheets, and curated and organized in a platform like tranSMART.
 
 ![](images/4.png?raw=true)
 There are multiple ways or pulling images from PAC systems and scanners. The choice of method depends of the task at hand. Images can be sent daily automatically from scanners. Scripts can be written to take advantage of the XNAT API to upload images in large batches. Finally, there are applets that allows selection of individual images from computers. Clinical data, high dimensional data, and image-related results can be stored into tranSMART 1.2 using tranSMART data.
