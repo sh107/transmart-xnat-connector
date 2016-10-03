@@ -3,15 +3,19 @@ This connector consists of components for data capture, organisation and analysi
 
 # Features
 
-# Installation of tranSMART-XNAT Connector
+# Prerequisite 
+
+It is essential to set up tranSMART before deploy the tranSMART-XNAT plugin.
 
 For installation of tranSMART, please visit [here](https://wiki.transmartfoundation.org/display/TSMTGPL/tranSMART+1.2+INSTALLATION+NOTES+ON+UBUNTU) for more detail. 
 
+# Installation of tranSMART-XNAT Connector
+
 The following shows the installation procedure for tranSMART-XNAT Connector
 
-Please download the code using Git to a local directory
+Please download the code using Git to a local directory.
 
-Add the following in “grails-app/conf/BuildConfig.groovy”
+Add the following in “grails-app/conf/BuildConfig.groovy”.
 
 ````
     grails.plugin.location.'transmart-xnat' = "[Your xnat directory]"
@@ -23,7 +27,7 @@ Change the following in “grails-app/conf/Config.groovy” if you would like to
     org.xnat.username = 'your xnat username'
     org.xnat.password = 'your xnat password'
 ```` 
-Import the database schema to the same PostgreSQL database as tranSMART
+Import the database schema to the same PostgreSQL database as tranSMART.
 ````
     CREATE SCHEMA xnat
       AUTHORIZATION biomart_user;
@@ -41,7 +45,7 @@ Import the database schema to the same PostgreSQL database as tranSMART
     );
     ALTER TABLE xnat.subject OWNER TO biomart_user;
 ````
-After the scheme is generated, please fill in the xnat.subject table as shown below
+After the scheme is generated, please fill in the xnat.subject table as shown below.
 
 | tsmart_subjectid | xnat_subjectid | xnat_project | id |
 | --- | --- | --- | --- |
@@ -52,11 +56,11 @@ After the scheme is generated, please fill in the xnat.subject table as shown be
 
 * xnat_subjectid denotes the id of the corresponding subject in XNAT. Each row of IDs refer to the same subject, in this example above, the subject IDs are the same for tranSMART and XNAT. If they differ, enter the id names appropriately. 
 
-* xnat_project is the id of the project in XNAT which contains the subjects
+* xnat_project is the id of the project in XNAT which contains the subjects.
 
-* id is self-defined unique number to identify the subject within the table
+* id is self-defined unique number to identify the subject within the table.
 
-Start the tranSMART, the plugin will be loaded automatically
+Start the tranSMART, the plugin will be loaded automatically.
 
 # Contributing
 
